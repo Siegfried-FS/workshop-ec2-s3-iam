@@ -81,7 +81,7 @@ Para entender cómo funciona la nube, utilizamos la perspectiva de un taller de 
 | **On-Premises** | Infraestructura local tradicional | Tú compras y mantienes todo | **Tener el local completo propio:** Tú pagas la renta del local, la luz industrial, compras la maquinaria, das mantenimiento y compras la madera. | Tu laptop o servidor físico en oficina |
 | **IaaS** *(Infraestructura como Servicio)* | Alquilas servidores y red a la medida en la nube | AWS te da el taller y la infraestructura; **tú como carpintero trabajas y construyes libremente** | **AWS te da la carpintería a la medida:** Tú eres el carpintero experimentado. No compras el local ni las máquinas; AWS te da el espacio y la energía a la medida que necesitas y tú te encargas de la carpintería. | **Amazon EC2**, Amazon VPC |
 | **PaaS** *(Plataforma como Servicio)* | Entorno preparado para ejecutar código | AWS administra todo el taller y herramientas; **tú solo pones la mano de obra** | **El taller equipado con herramientas listas:** AWS te tiene todo el taller montado y ajustado. Tú solo pones la mano de obra para armar la pieza final sin preocuparte por mantener las máquinas. | AWS App Runner, Elastic Beanstalk |
-| **SaaS** *(Software como Servicio)* | Aplicación web lista para usar | El proveedor administra **todo el producto y la mueblería** | **La mueblería:** Es la tienda. El cliente entra, selecciona el mueble terminado y se lo lleva a casa listo para usar. | Gmail, Netflix, Vaultwarden |
+| **SaaS** *(Software como Servicio)* | Aplicación web lista para usar | El proveedor administra **todo el producto y la mueblería** | **La mueblería:** Es la tienda. El cliente entra, selecciona el mueble terminado y se lo lleva a casa listo para usar. | Gmail, Netflix, Microsoft 365 |
 
 ---
 
@@ -220,7 +220,7 @@ if __name__ == '__main__':
 ## Retos de la Semana 2
 
 * **Track Nuevos (Sin tarjeta de crédito):** Completa el curso o laboratorio práctico de Amazon EC2 o AWS IAM en **AWS Skill Builder** o **AWS Educate** y comparte tu constancia en la comunidad.
-* **Track Avanzados (Consola real):** Realiza este laboratorio en tu cuenta de AWS o explora el laboratorio complementario de [Vaultwarden en EC2](file:///home/siegfried_fs/Documents/proyectos/de-cero-a-cloud/semana-02/vaulwarden/README.md) usando Docker.
+* **Track Avanzados (Consola real):** Realiza este laboratorio en tu cuenta de AWS desplegando y probando la aplicación interactiva.
 
 ---
 

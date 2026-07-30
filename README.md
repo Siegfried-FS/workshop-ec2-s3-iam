@@ -152,7 +152,7 @@ Porque las instancias EC2 son efímeras. Si apagas o eliminas la carpintería vi
 
 ## PARTE 4: EXPLICACIÓN DEL CÓDIGO PASO A PASO
 
-### A. El Script de Inicio Automático (`lab/user_data.sh`)
+> **Nota:** No necesitas modificar ningún archivo ni editar líneas de código manualmente. Al ejecutar `bash deploy.sh`, el sistema genera automáticamente un nombre de bucket S3 único a nivel global (con formato `galeria-aws-playa-vicente-<timestamp>-<hash>`) e inyecta la variable de entorno en el servidor EC2.
 
 ```bash
 #!/bin/bash
@@ -161,13 +161,14 @@ dnf install -y python3-pip cronie || apt-get install -y python3-pip cronie
 systemctl enable --now crond || true
 pip3 install flask boto3
 
-export BUCKET_NAME="tu-nombre-de-bucket-aqui"
+# BUCKET_NAME inyectado automáticamente por deploy.sh
+export BUCKET_NAME="galeria-aws-playa-vicente-1722345678-abc12"
 
 cat << 'EOF' > /app.py
 ... (Código de la aplicación web) ...
 EOF
 
-(crontab -l 2>/dev/null; echo "@reboot export BUCKET_NAME=tu-nombre-de-bucket-aqui && python3 /app.py &") | crontab -
+(crontab -l 2>/dev/null; echo "@reboot export BUCKET_NAME=$BUCKET_NAME && python3 /app.py &") | crontab -
 python3 /app.py &
 ```
 
@@ -220,7 +221,6 @@ if __name__ == '__main__':
 ## Comunidad y Canales Oficiales
 
 * **Meetup:** [AWS User Group Playa Vicente](https://www.meetup.com/aws-user-group-playa-vicente/)
-* **Google Classroom:** Código `enuoy6bb`
 * **WhatsApp:** [Grupo Oficial de Soporte](https://chat.whatsapp.com/JBdSseny4XM65dGBHHDgwS)
 * **Telegram:** [Canal de Noticias](https://t.me/AUGPlayaVicente)
 * **YouTube:** [Canal de Grabaciones](https://www.youtube.com/channel/UCObJL_Id1HHsx1hg0aNISlw)

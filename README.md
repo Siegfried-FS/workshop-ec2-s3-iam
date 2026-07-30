@@ -217,13 +217,6 @@ if __name__ == '__main__':
 
 ---
 
-## Retos de la Semana 2
-
-* **Track Nuevos (Sin tarjeta de crédito):** Completa el curso o laboratorio práctico de Amazon EC2 o AWS IAM en **AWS Skill Builder** o **AWS Educate** y comparte tu constancia en la comunidad.
-* **Track Avanzados (Consola real):** Realiza este laboratorio en tu cuenta de AWS desplegando y probando la aplicación interactiva.
-
----
-
 ## Comunidad y Canales Oficiales
 
 * **Meetup:** [AWS User Group Playa Vicente](https://www.meetup.com/aws-user-group-playa-vicente/)

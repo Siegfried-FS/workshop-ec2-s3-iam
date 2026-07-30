@@ -59,6 +59,13 @@ bash deploy.sh
 bash cleanup.sh
 ```
 
+> **Personalización Opcional:** Si deseas cambiar los prefijos o nombres por defecto de tus recursos (Bucket S3, IAM Role, Security Group), puedes modificar las líneas 31-34 en `lab/deploy.sh`:
+> ```bash
+> BUCKET_NAME="tu-prefijo-bucket-${UNIQUE_ID}"
+> ROLE_NAME="Tu-Nombre-De-Rol-${UNIQUE_ID}"
+> SG_NAME="tu-grupo-de-seguridad-${UNIQUE_ID}"
+> ```
+
 ---
 
 ## Objetivos de la Clase
